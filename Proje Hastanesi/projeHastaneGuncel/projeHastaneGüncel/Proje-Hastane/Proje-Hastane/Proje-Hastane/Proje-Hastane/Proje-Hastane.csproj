@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D28B059-DA6C-47B9-86A1-647C01ACEB29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Proje_Hastane</RootNamespace>
+    <AssemblyName>Proje-Hastane</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anaGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anaGiris.Designer.cs">
+      <DependentUpon>anaGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baglanti.cs" />
+    <Compile Include="doktorBilgiDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktorBilgiDuzenle.Designer.cs">
+      <DependentUpon>doktorBilgiDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktorDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktorDetay.Designer.cs">
+      <DependentUpon>doktorDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktorgirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktorgirisi.Designer.cs">
+      <DependentUpon>doktorgirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktorKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktorKayit.Designer.cs">
+      <DependentUpon>doktorKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="duyurlarListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="duyurlarListele.Designer.cs">
+      <DependentUpon>duyurlarListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hastaBilgiDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hastaBilgiDuzenle.Designer.cs">
+      <DependentUpon>hastaBilgiDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hastaDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hastaDetay.Designer.cs">
+      <DependentUpon>hastaDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hastaGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hastaGirisi.Designer.cs">
+      <DependentUpon>hastaGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hastaKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hastaKayit.Designer.cs">
+      <DependentUpon>hastaKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panelBrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panelBrans.Designer.cs">
+      <DependentUpon>panelBrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panelDoktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panelDoktor.Designer.cs">
+      <DependentUpon>panelDoktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="projeHastanesiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projeHastanesiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjeHastanesiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjeHastanesiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="randevuListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="randevuListesi.Designer.cs">
+      <DependentUpon>randevuListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sekreterDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sekreterDetay.Designer.cs">
+      <DependentUpon>sekreterDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sekreterGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sekreterGirisi.Designer.cs">
+      <DependentUpon>sekreterGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sekreterKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sekreterKayit.Designer.cs">
+      <DependentUpon>sekreterKayit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anaGiris.resx">
+      <DependentUpon>anaGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktorBilgiDuzenle.resx">
+      <DependentUpon>doktorBilgiDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktorDetay.resx">
+      <DependentUpon>doktorDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktorgirisi.resx">
+      <DependentUpon>doktorgirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktorKayit.resx">
+      <DependentUpon>doktorKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="duyurlarListele.resx">
+      <DependentUpon>duyurlarListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hastaBilgiDuzenle.resx">
+      <DependentUpon>hastaBilgiDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hastaDetay.resx">
+      <DependentUpon>hastaDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hastaGirisi.resx">
+      <DependentUpon>hastaGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hastaKayit.resx">
+      <DependentUpon>hastaKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panelBrans.resx">
+      <DependentUpon>panelBrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panelDoktor.resx">
+      <DependentUpon>panelDoktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="randevuListesi.resx">
+      <DependentUpon>randevuListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sekreterDetay.resx">
+      <DependentUpon>sekreterDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sekreterGirisi.resx">
+      <DependentUpon>sekreterGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sekreterKayit.resx">
+      <DependentUpon>sekreterKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="projeHastanesiDataSet.xsc">
+      <DependentUpon>projeHastanesiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="projeHastanesiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projeHastanesiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projeHastanesiDataSet.xss">
+      <DependentUpon>projeHastanesiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjeHastanesiDataSet1.xsc">
+      <DependentUpon>ProjeHastanesiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ProjeHastanesiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjeHastanesiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjeHastanesiDataSet1.xss">
+      <DependentUpon>ProjeHastanesiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
